@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="renderer" content="webkit" />
+<meta property="og:title" content="SUN的博客" />
+
+<meta name="keywords" content="个人分享">
+<meta name="description" content="SUN的博客是一个分享一些学习及生活中事情的地方。">
+
+<!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
+<link rel="stylesheet" href="../_assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="../_assets/css/base.css">
+<!-- <link rel="stylesheet" href="../_assets/css/index.css"> -->
+
+
+<script src="../_assets/js/jquery-1.8.3.min.js"></script>
+<script src="../_assets/js/base.js"></script>
+
+
+<!--引入分享插件-->
+<link rel="stylesheet" href="../_assets/css/share.min.css">
+<script src="../_assets/js/wow.min.js"></script>
+<!--引入分享插件-->
+<script src="../_assets/js/jquery.share.min.js"></script>
+<!--这里是因为在文章所以要隐藏掉右侧身体部分在大屏幕下的div，在小屏幕时在显示出来-->
+<style type="text/css">.base_content_right{width: 0;visibility: hidden;height: 0;}</style>
+
+        <title>
+            Joplin 插件 -
+                SUN的历史分享</title>
+</head>
+
+<body>
+    <div class="base_header">
+
+    <div class="base_header_content">
+
+        <a href="../" class="base_header_logo"><img src="../_assets/img/logo.png"></a>
+
+        <div class="base_header_nav">
+            <ul>
+                <!--这里是没有子栏目的样式-->
+                <li><i class="fa fa-caret-right"></i><a href="../">首页</a></li>
+
+                <!--顶级导航-->
+                <li class="have_second_navs">
+                    <i class="fa fa-caret-right"></i><a href="../archives" class="base_header_nav_active">我的文章</a>
+
+                    <!--二级导航有子栏目的时候-->
+                    <ul class="nav_child">
+
+                        <li><i class="fa fa-caret-right"></i><a href="../archives">个人</a>
+
+                            <!--三级栏目-->
+                            <ul class="nav_child">
+                                <li><a href="../archives">博客类</a></li>
+                                <li><a href="../archives">技术类</a></li>
+                                <li><a href="../archives">学习类</a></li>
+                            </ul>
+
+                        </li>
+
+                        <!--二级导航没有子栏目的时候-->
+                        <li><a href="../archives">学习</a></li>
+
+                    </ul>
+                </li>
+
+
+
+                <!--顶级导航-->
+                <li class="have_second_navs">
+                    <i class="fa fa-caret-right"></i><a href="../archives">博客</a>
+
+
+                    <!--二级导航有子栏目的时候-->
+                    <ul class="nav_child">
+
+                        <li><i class="fa fa-caret-right"></i><a href="../archives">学习</a>
+
+                            <!--三级栏目-->
+                            <ul class="nav_child">
+                                <li><a href="../archives">css</a></li>
+                                <li><a href="../archives">js</a></li>
+                                <li><a href="../archives">jquery</a></li>
+                            </ul>
+
+                        </li>
+
+                        <!--二级导航没有子栏目的时候-->
+                        <li><a href="javascript:void(0)">学习</a></li>
+
+                    </ul>
+                </li>
+
+
+
+
+                <li>
+                    <i class="fa fa-caret-right"></i>
+                    <a href="/essay">随笔</a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+        <!--手机导航部分-->
+
+        <div class="base_nav_menu" id="base_nav_menu" bind_click="true"><span bind_click="true"></span></div>
+
+        <div class="base_nav_zhezao"></div>
+
+    </div>
+</div>
+        <div class="base_content_body">
+    <!--base文章页身体部分居中显示-->
+    <div class="base_content_content clearfix">
+
+
+        <div class="wenzhang_box wow zoomIn">
+            <!--文章盒子-->
+            <div class="wenzhang_box_content clearfix">
+
+
+                <!-- <img class="wenzhang_yinzhang" src="img/yinzhang.png"> -->
+                <!--文章抬头-->
+                <div class="wenzhang_box_content_title">
+
+                    <h4>
+                        <a href="javascript:void(0)">我的博客<i class="fa fa-angle-right"></i></a>
+
+                        Joplin 插件
+
+
+                    </h4>
+
+                    <p class="wenzhang_box_content_jieshao">
+                        <span class="wenzhang_box_content_jieshao_zuozhe">作者：SUN</span>
+
+                        <!-- <span class="wenzhang_box_content_jieshao_zishu">总字数：3500</span> -->
+
+                        <span class="wenzhang_box_content_jieshao_time">更新于：<time datetime="1642579283000"
+                            >2022-01-19 16:01</time
+                          ></span>
+
+                        <span class="wenzhang_box_content_jieshao_weiguan">围观群众：<span class="wenzhang_box_content_jieshao_xieti">8888</span></span>
+
+                        <span class="wenzhang_box_content_jieshao_dig">点赞人数：<span class="wenzhang_box_content_jieshao_xieti">500</span></span>
+
+                        <span class="wenzhang_box_content_jieshao_pinglun">评论人数：<span class="wenzhang_box_content_jieshao_xieti">500</span></span>
+
+                    </p>
+
+                </div>
+
+                <!--文章抬头的右侧书-->
+                <!--            <div class="wenzhang_box_content_title_right">-->
+                <!--                <img src="img/yinzhang.png">-->
+                <!--            </div>-->
+
+                <!--文章身体部分-->
+
+                <div class="wenzhang_box_article">
+
+                    <div class="wenzhang_box_article_info">
+                        <i class="fa fa-quote-left"></i> 这里是文章的简介部分
+                        <i class="fa fa-quote-right"></i>
+                    </div>
+
+
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=541687281&auto=1&height=66">
+                       
+                    </iframe>
+
+                    <!--文章页内容开始的地方-->
+
+                    <link rel="stylesheet" href="../_assets/main.css" />
+
+<script type="text/javascript">
+    window.onload = windowHeight; //页面载入完毕执行函数
+    function windowHeight() {
+        var h = document.documentElement.clientHeight; //获取当前窗口可视操作区域高度
+        var bodyHeight = document.getElementById("divContent"); //寻找ID为content的对象
+        bodyHeight.style.height = (h - 25) + "px"; //你想要自适应高度的对象
+    }
+    setInterval(windowHeight, 500) //每半秒执行一次windowHeight函数
+</script>
+
+<style>
+    .father {
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        /* background-color: #222; */
+    }
+    
+    .element {
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: #eee; */
+        height: auto;
+        padding-bottom: 100%;
+        padding-top: 200px;
+    }
+    
+    .mou {
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: #eee; */
+        height: auto;
+        padding-bottom: inherit;
+        padding-top: 0;
+        margin-bottom: inherit;
+    }
+</style>
+
+<div class="father">
+
+    <div class="main mou">
+        <article class="element">
+            <header>
+                <h1 class="article-title">
+                    Joplin 插件
+                </h1>
+                <div class="article-info">
+                    <div>
+                        <span>Created At：<time datetime="1642579283000"
+              >2022-01-19 16:01</time
+            ></span
+          >
+          <span
+            >Updated At：<time datetime="1642579327000"
+              >2022-01-19 16:02</time
+            ></span
+          >
+        </div>
+        
+                </div>
+            </header>
+
+            <div class="article-content markdown-body main-wrap">
+                <h1 id="joplin-plugin-repository">Joplin Plugin Repository</h1>
+<p>This is the official Joplin Plugin Repository. It is updated every 30 minutes on the hour and half-hour.</p>
+<h2 id="installation">Installation</h2>
+<p>To install any of these plugins, open the desktop application, then go to the “Plugins” section in the Configuration screen. You can then search for any plugin and install it from there.</p>
+<h2 id="plugins">Plugins</h2>
+<p>This repository contains the following plugins:</p>
+
+<table>
+<thead>
+<tr>
+<th> </th>
+<th> </th>
+<th>Name</th>
+<th>Version</th>
+<th>Description</th>
+<th>Author</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a title="https://github.com/joplin/plugin-abc-sheet-music" href="https://github.com/joplin/plugin-abc-sheet-music">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/org.joplinapp.plugins.AbcSheetMusic/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/org.joplinapp.plugins.AbcSheetMusic/plugin.jpl">⬇️</a></td>
+<td>ABC Sheet Music Plugin</td>
+<td>1.0.2</td>
+<td>Turns ABC text notation into sheet music</td>
+<td>Laurent Cozic</td>
+</tr>
+<tr>
+<td><a title="https://github.com/maxnegro/joplin-plugin-admonition" href="https://github.com/maxnegro/joplin-plugin-admonition">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/org.joplinapp.plugins.admonition/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/org.joplinapp.plugins.admonition/plugin.jpl">⬇️</a></td>
+<td>Admonition markdown extension</td>
+<td>1.1.0</td>
+<td>Enables markdownIt admonition plugin, which enables formatting notes</td>
+<td>Massimiliano Masserelli</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/agenda/21158" href="https://discourse.joplinapp.org/t/agenda/21158">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.gitlab.BeatLink.joplin-plugin-agenda/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.gitlab.BeatLink.joplin-plugin-agenda/plugin.jpl">⬇️</a></td>
+<td>Agenda</td>
+<td>2.4.1</td>
+<td>An agenda/calendar/schedule panel for joplin that shows all uncompleted to-dos with a due date.</td>
+<td>BeatLink</td>
+</tr>
+<tr>
+<td><a title="https://github.com/makaanneo/joplin-plugin-athena" href="https://github.com/makaanneo/joplin-plugin-athena">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.github.makaanneo.Athena/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.github.makaanneo.Athena/plugin.jpl">⬇️</a></td>
+<td>Athena</td>
+<td>1.5.1</td>
+<td>Import files in import folder into joplin notes (PDF text in note comment, no OCR)</td>
+<td>makaanneo</td>
+</tr>
+<tr>
+<td><a title="https://github.com/manuerwin/joplin-plugin-attache#readme" href="https://github.com/manuerwin/joplin-plugin-attache#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.github.manuerwin.attache/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.github.manuerwin.attache/plugin.jpl">⬇️</a></td>
+<td>Attaché</td>
+<td>1.1.1</td>
+<td>Your attachment updater. Mass replacement of Joplin attachments (resources) such as resized image files, current music playlists, and any other attachments you need to one-off or regularly update within Joplin.</td>
+<td>Manu Erwin</td>
+</tr>
+<tr>
+<td><a title="github.com/zph/joplin-plugin-auto-alarm" href="github.com/zph/joplin-plugin-auto-alarm">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.xargs.JoplinPluginAutoAlarm/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.xargs.JoplinPluginAutoAlarm/plugin.jpl">⬇️</a></td>
+<td>Auto Alarm</td>
+<td>1.0.7-rc10</td>
+<td>Natural language entry of alarm date/times</td>
+<td>ZPH</td>
+</tr>
+<tr>
+<td>-</td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.xargs.JoplinPluginAutoTag/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.xargs.JoplinPluginAutoTag/plugin.jpl">⬇️</a></td>
+<td>Auto Tag</td>
+<td>1.0.3-rc7</td>
+<td>Convert all octothorpe prefixed words into tags</td>
+<td>ZPH</td>
+</tr>
+<tr>
+<td><a title="https://github.com/S73ph4n" href="https://github.com/S73ph4n">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.autolinker/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.autolinker/plugin.jpl">⬇️</a></td>
+<td>Autolinker</td>
+<td>1.0.4</td>
+<td>Adds an icon to the toolbar. When clicked, it creates a link to the note with a title matching the selected text.</td>
+<td>S73ph4n</td>
+</tr>
+<tr>
+<td><a title="https://github.com/S73ph4n" href="https://github.com/S73ph4n">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.automate_notes/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.automate_notes/plugin.jpl">⬇️</a></td>
+<td>Automate Notes</td>
+<td>1.0.2</td>
+<td>Finds blocks of javascript in the current note (blocks have to start with ‘<code>javascript' and end with '</code>’) and runs it as a function.</td>
+<td>S73ph4n</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/insert-referencing-notes-backlinks-plugin/13632" href="https://discourse.joplinapp.org/t/insert-referencing-notes-backlinks-plugin/13632">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.backlinksToNote/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.backlinksToNote/plugin.jpl">⬇️</a></td>
+<td>Automatic Backlinks to note</td>
+<td>3.0.3</td>
+<td>Creates backlinks to opened note, also in automatic way</td>
+<td>ambrt,cyingfan</td>
+</tr>
+<tr>
+<td><a title="https://github.com/ylc395/joplin-plugin-better-markdown-viewer" href="https://github.com/ylc395/joplin-plugin-better-markdown-viewer">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/ylc395.betterMarkdownViewer/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/ylc395.betterMarkdownViewer/plugin.jpl">⬇️</a></td>
+<td>Better Markdown Viewer</td>
+<td>2.0.4</td>
+<td>Keep Cursor Synced Between Editor and MD Viewer</td>
+<td>ylc395</td>
+</tr>
+<tr>
+<td><a title="https://github.com/DanteCoder/JoplinBibleQuote#readme" href="https://github.com/DanteCoder/JoplinBibleQuote#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.DanteCoder.JoplinBibleQuote/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.DanteCoder.JoplinBibleQuote/plugin.jpl">⬇️</a></td>
+<td>Bible Quote</td>
+<td>1.0.0</td>
+<td>Quote the bible direct in text editor</td>
+<td>Dante G. Barboza</td>
+</tr>
+<tr>
+<td>-</td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.xUser5000.bibtex/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.xUser5000.bibtex/plugin.jpl">⬇️</a></td>
+<td>BibTeX</td>
+<td>0.5.0</td>
+<td>Use locally stored BibTeX files to integrate citation into Joplin</td>
+<td>Abdallah Ahmed</td>
+</tr>
+<tr>
+<td><a title="https://github.com/ahaltindis/joplin-plugin-bulk-note-creator" href="https://github.com/ahaltindis/joplin-plugin-bulk-note-creator">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.ahaltindis.joplin.BulkNoteCreator/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.ahaltindis.joplin.BulkNoteCreator/plugin.jpl">⬇️</a></td>
+<td>Bulk Note Creator</td>
+<td>1.0.0</td>
+<td>Create notes as bulk</td>
+<td>Ahmet Altindis</td>
+</tr>
+<tr>
+<td><a title="https://github.com/marc0l92/joplin-plugin-bytefield-svg#readme" href="https://github.com/marc0l92/joplin-plugin-bytefield-svg#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.github.marc0l92.joplin-plugin-bytefield-svg/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.github.marc0l92.joplin-plugin-bytefield-svg/plugin.jpl">⬇️</a></td>
+<td>bytefield-svg</td>
+<td>1.1.0</td>
+<td>Add support for bytefield-svg diagrams used to describe network protocols, memory layouts and any other binary structure.</td>
+<td>marc0l92</td>
+</tr>
+<tr>
+<td><a title="https://github.com/Mick2nd/Code-Section#readme" href="https://github.com/Mick2nd/Code-Section#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/de.habelt.CodeSection/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/de.habelt.CodeSection/plugin.jpl">⬇️</a></td>
+<td>Code Section</td>
+<td>1.0.3</td>
+<td>Inserts a piece of code from code source</td>
+<td>Jürgen Habelt</td>
+</tr>
+<tr>
+<td><a title="https://github.com/shantanugoel/joplin-plugin-cm-linenumbers" href="https://github.com/shantanugoel/joplin-plugin-cm-linenumbers">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.shantanugoel.JoplinCMLineNumbersPlugin/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.shantanugoel.JoplinCMLineNumbersPlugin/plugin.jpl">⬇️</a></td>
+<td>CodeMirror Line Numbers</td>
+<td>2.0.0</td>
+<td>Enables line numbers for CodeMirror editor</td>
+<td>Shantanu Goel</td>
+</tr>
+<tr>
+<td><a title="https://github.com/JackGruber/joplin-plugin-combine-notes" href="https://github.com/JackGruber/joplin-plugin-combine-notes">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.combine-notes/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.combine-notes/plugin.jpl">⬇️</a></td>
+<td>Combine notes</td>
+<td>1.0.1</td>
+<td>Combine one or more notes</td>
+<td>JackGruber</td>
+</tr>
+<tr>
+<td><a title="https://github.com/S73ph4n" href="https://github.com/S73ph4n">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.complete_link/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.complete_link/plugin.jpl">⬇️</a></td>
+<td>Complete Link</td>
+<td>1.0.1</td>
+<td>This plugin adds an icon to the toolbar. When clicked, it completes the selected text into a note title (in a markdown link).</td>
+<td>S73ph4n</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/plugin-conflict-resolution/19204" href="https://discourse.joplinapp.org/t/plugin-conflict-resolution/19204">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin-plugin-conflict-resolution/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin-plugin-conflict-resolution/plugin.jpl">⬇️</a></td>
+<td>Conflict Resolution</td>
+<td>1.2.3</td>
+<td>A plugin that makes process of resolving conflicts easier.</td>
+<td>Ahmed Alwasifey</td>
+</tr>
+<tr>
+<td><a title="https://github.com/hieuthi/joplin-plugin-container-with-classes" href="https://github.com/hieuthi/joplin-plugin-container-with-classes">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.container-with-classes/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.container-with-classes/plugin.jpl">⬇️</a></td>
+<td>Container with Classes</td>
+<td>1.0.0</td>
+<td>Plugin for creating block-level containers with classes for customization</td>
+<td>Hieu-Thi Luong</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/create-note-from-highlighted-text/12511" href="https://discourse.joplinapp.org/t/create-note-from-highlighted-text/12511">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.convertToNewNote/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.convertToNewNote/plugin.jpl">⬇️</a></td>
+<td>Convert Text To New Note</td>
+<td>1.5.1</td>
+<td>Converts highlighted text to new one in same folder</td>
+<td>ambrt</td>
+</tr>
+<tr>
+<td><a title="https://github.com/hieuthi/joplin-plugin-copy-anchor-link" href="https://github.com/hieuthi/joplin-plugin-copy-anchor-link">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.copy-anchor-link/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.copy-anchor-link/plugin.jpl">⬇️</a></td>
+<td>Copy Anchor Link</td>
+<td>1.0.0</td>
+<td>Add a link icon near each heading. Copy Joplin markdown link of the specific heading to clipboard when click on the icon.</td>
+<td>Hieu-Thi Luong</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/copy-markdown-link-to-active-note/14402" href="https://discourse.joplinapp.org/t/copy-markdown-link-to-active-note/14402">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.copyNoteLink/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.copyNoteLink/plugin.jpl">⬇️</a></td>
+<td>Copy link to active note</td>
+<td>1.0.1</td>
+<td>Adds entry to right click menu in editor to get link to active note</td>
+<td>a</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/go-to-note-tag-or-notebook-via-highlighting-text-in-editor/12731" href="https://discourse.joplinapp.org/t/go-to-note-tag-or-notebook-via-highlighting-text-in-editor/12731">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.goToItem/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.goToItem/plugin.jpl">⬇️</a></td>
+<td>Create and go to #tags and @notebooks</td>
+<td>1.3.7</td>
+<td>Go to tag,notebook or note via links or via text</td>
+<td>a</td>
+</tr>
+<tr>
+<td><a title="https://github.com/S73ph4n" href="https://github.com/S73ph4n">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.day_review/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.day_review/plugin.jpl">⬇️</a></td>
+<td>Day Review</td>
+<td>1.0.1</td>
+<td>This plugin adds an icon to the toolbar. When clicked, it makes a review of the day’s created/updated/completed notes and todos.</td>
+<td>S73ph4n</td>
+</tr>
+<tr>
+<td><a title="https://github.com/JJ-8/joplin-disable-pdf#readme" href="https://github.com/JJ-8/joplin-disable-pdf#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/fd117a99-b165-4824-893c-5825439a842d/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/fd117a99-b165-4824-893c-5825439a842d/plugin.jpl">⬇️</a></td>
+<td>Disable PDF</td>
+<td>1.0.0</td>
+<td>Disables the PDF preview (and export) in Joplin for better performance</td>
+<td>JJ-8</td>
+</tr>
+<tr>
+<td><a title="https://github.com/EliasVincent/joplin-email-note" href="https://github.com/EliasVincent/joplin-email-note">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.eliasvsimon.email-note/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.eliasvsimon.email-note/plugin.jpl">⬇️</a></td>
+<td>Email Note</td>
+<td>1.2.2</td>
+<td>Send a note as an email</td>
+<td>EliasVincent</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/embed-any-search-with-content/14328" href="https://discourse.joplinapp.org/t/embed-any-search-with-content/14328">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.embedSearch/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.embedSearch/plugin.jpl">⬇️</a></td>
+<td>Embed Search</td>
+<td>2.0.0</td>
+<td>Embeds list of links specified by search inside of note</td>
+<td>ambrt</td>
+</tr>
+<tr>
+<td>-</td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.embeddedtags/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.embeddedtags/plugin.jpl">⬇️</a></td>
+<td>embedded tags</td>
+<td>1.0.0</td>
+<td>embeded tags</td>
+<td>Dave Edwards</td>
+</tr>
+<tr>
+<td><a title="https://github.com/aman-d-1-n-only/joplin-exports-to-ssg#readme" href="https://github.com/aman-d-1-n-only/joplin-exports-to-ssg#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.export-to-ssg.aman-d-1-n-only/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.export-to-ssg.aman-d-1-n-only/plugin.jpl">⬇️</a></td>
+<td>Export To SSG</td>
+<td>1.0.3</td>
+<td>Export a collection of notes to static site generator project.</td>
+<td>aman-d-1-n-only</td>
+</tr>
+<tr>
+<td><a title="https://github.com/benji300/joplin-favorites" href="https://github.com/benji300/joplin-favorites">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.benji.favorites/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.benji.favorites/plugin.jpl">⬇️</a></td>
+<td>Favorites</td>
+<td>1.3.0</td>
+<td>Save any notebook, note, to-do, tag, or search as favorite in an extra panel view for quick access.</td>
+<td>Benji300</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/persistent-text-folding-in-editor/16183" href="https://discourse.joplinapp.org/t/persistent-text-folding-in-editor/16183">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.fold-cm/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.fold-cm/plugin.jpl">⬇️</a></td>
+<td>Folding in Code Mirror Editor</td>
+<td>2.0.1</td>
+<td>Allows to fold parts of markdown text displayed in editor</td>
+<td>ambrt</td>
+</tr>
+<tr>
+<td><a title="https://github.com/tessus/joplin-plugin-get-notebook-id#readme" href="https://github.com/tessus/joplin-plugin-get-notebook-id#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/cx.evermeet.tessus.folder-id/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/cx.evermeet.tessus.folder-id/plugin.jpl">⬇️</a></td>
+<td>Get Notebook ID</td>
+<td>1.0.1</td>
+<td>Copy/Show the ID of a notebook. For developers. A regular user won’t need this.</td>
+<td>Helmut K. C. Tessarek</td>
+</tr>
+<tr>
+<td><a title="https://github.com/marc0l92/joplin-plugin-github-theme#readme" href="https://github.com/marc0l92/joplin-plugin-github-theme#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.github.marc0l92.joplin-plugin-github-theme/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.github.marc0l92.joplin-plugin-github-theme/plugin.jpl">⬇️</a></td>
+<td>GitHub Theme</td>
+<td>0.3.0</td>
+<td>Joplin theme with colors of GitHub</td>
+<td>marc0l92</td>
+</tr>
+<tr>
+<td><a title="https://github.com/agerardin/joplin-plugin-knowledge-graph" href="https://github.com/agerardin/joplin-plugin-knowledge-graph">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin-plugin-knowledge-graph/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin-plugin-knowledge-graph/plugin.jpl">⬇️</a></td>
+<td>Graph</td>
+<td>1.1.0</td>
+<td>Notes as nodes. Explore your Joplin knowledge graph.</td>
+<td>Antoine Gerardin</td>
+</tr>
+<tr>
+<td><a title="https://github.com/adarsh-sgh/homenote#readme" href="https://github.com/adarsh-sgh/homenote#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.lki.homenote/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.lki.homenote/plugin.jpl">⬇️</a></td>
+<td>Home Note</td>
+<td>1.0.3</td>
+<td>Plugin to open a choosen note each time joplin starts. It is like homepages on browsers.</td>
+<td>Adarsh Singh(lki)</td>
+</tr>
+<tr>
+<td><a title="https://github.com/JackGruber/joplin-plugin-hotfolder/blob/master/README.md" href="https://github.com/JackGruber/joplin-plugin-hotfolder/blob/master/README.md">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.hotfolder/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.hotfolder/plugin.jpl">⬇️</a></td>
+<td>Hotfolder</td>
+<td>1.0.1</td>
+<td>Monitors a locale folder and import the files as a new note.</td>
+<td>JackGruber</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/plugin-inline-tags/14192" href="https://discourse.joplinapp.org/t/plugin-inline-tags/14192">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.whatever.inline-tags/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.whatever.inline-tags/plugin.jpl">⬇️</a></td>
+<td>Inline tags</td>
+<td>1.2.0</td>
+<td>Inline tags plugin</td>
+<td>Roman Musin</td>
+</tr>
+<tr>
+<td><a title="https://github.com/herdsothom/joplin-insert-date" href="https://github.com/herdsothom/joplin-insert-date">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin-insert-date/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin-insert-date/plugin.jpl">⬇️</a></td>
+<td>Insert Date</td>
+<td>1.0.1</td>
+<td>Adds a button to insert the current date (without time) into the editor.</td>
+<td>herdsothom</td>
+</tr>
+<tr>
+<td><a title="https://github.com/marc0l92/joplin-plugin-jira-issue#readme" href="https://github.com/marc0l92/joplin-plugin-jira-issue#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.github.marc0l92.joplin-plugin-jira-issue/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.github.marc0l92.joplin-plugin-jira-issue/plugin.jpl">⬇️</a></td>
+<td>Jira Issue</td>
+<td>2.2.2</td>
+<td>Retrieve Atlassian Jira issues information using their api in order to track the status of them from your Joplin notes.</td>
+<td>marc0l92</td>
+</tr>
+<tr>
+<td><a title="https://github.com/chenlijun99/autoanki/packages/joplin-plugin" href="https://github.com/chenlijun99/autoanki/packages/joplin-plugin">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.anki-sync/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.anki-sync/plugin.jpl">⬇️</a></td>
+<td>Joplin Anki Sync</td>
+<td>1.0.0</td>
+<td>Bidirectional sync between Joplin and Anki</td>
+<td>Lijun Chen</td>
+</tr>
+<tr>
+<td><a title="https://github.com/makaanneo/joplin-plugin-apollo" href="https://github.com/makaanneo/joplin-plugin-apollo">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.github.makaanneo.apollo/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.github.makaanneo.apollo/plugin.jpl">⬇️</a></td>
+<td>Joplin Note Attachement rename</td>
+<td>1.1.0</td>
+<td>Joplin plugin to rename note attachments,</td>
+<td>makaanneo</td>
+</tr>
+<tr>
+<td><a title="https://github.com/Cologler/userlink-joplin" href="https://github.com/Cologler/userlink-joplin">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/b53da1f6-868c-468d-b60c-2897a27166ac/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/b53da1f6-868c-468d-b60c-2897a27166ac/plugin.jpl">⬇️</a></td>
+<td>Joplin User Link Plugin</td>
+<td>1.2.0</td>
+<td>A Joplin plugin for custom links, like <code>jump://?query=blabla</code>.</td>
+<td>Cologler</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/plugin-share-note-online-via-hackmd/22048" href="https://discourse.joplinapp.org/t/plugin-share-note-online-via-hackmd/22048">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/eu.xardbaiz.joplin.HackMD/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/eu.xardbaiz.joplin.HackMD/plugin.jpl">⬇️</a></td>
+<td>joplin-hackmd</td>
+<td>1.0.1</td>
+<td>Quick share notes on HackMD</td>
+<td>xardbaiz</td>
+</tr>
+<tr>
+<td><a title="https://github.com/ThibaultJanBeyer/joplin-sheets" href="https://github.com/ThibaultJanBeyer/joplin-sheets">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.joplin.JSheets/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.joplin.JSheets/plugin.jpl">⬇️</a></td>
+<td>JSheets</td>
+<td>1.1.3</td>
+<td>JSheets - use to write spreadsheets like excel in Joplin</td>
+<td>Thibault Jan Beyer</td>
+</tr>
+<tr>
+<td><a title="https://github.com/joplin/plugin-kanban/wiki" href="https://github.com/joplin/plugin-kanban/wiki">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.github.joplin.kanban/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.github.joplin.kanban/plugin.jpl">⬇️</a></td>
+<td>Kanban</td>
+<td>1.0.5</td>
+<td>Flexible kanban board plugin for all your tasks</td>
+<td>Balint Magyar</td>
+</tr>
+<tr>
+<td><a title="https://github.com/treymo/joplin-link-graph" href="https://github.com/treymo/joplin-link-graph">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.treymo.LinkGraph/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.treymo.LinkGraph/plugin.jpl">⬇️</a></td>
+<td>Link Graph UI</td>
+<td>1.1.4</td>
+<td>Visualize the connections between Joplin notes.</td>
+<td>Trey Mo</td>
+</tr>
+<tr>
+<td><a title="https://github.com/ajilderda/joplin-macos-native-theme" href="https://github.com/ajilderda/joplin-macos-native-theme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.andrejilderda.macOSTheme/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.andrejilderda.macOSTheme/plugin.jpl">⬇️</a></td>
+<td>macOS theme</td>
+<td>1.2.14</td>
+<td>Native looking macOS theme for Joplin. Also works on non-macOS devices.</td>
+<td>Andre Jilderda</td>
+</tr>
+<tr>
+<td><a title="https://github.com/S73ph4n" href="https://github.com/S73ph4n">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.make_all_links/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.s73ph4n.make_all_links/plugin.jpl">⬇️</a></td>
+<td>Make All Links</td>
+<td>1.0.3</td>
+<td>Searches the current note for mentions of other notes, then makes the corresponding links. Just click the new icon in the toolbar.</td>
+<td>S73ph4n</td>
+</tr>
+<tr>
+<td><a title="https://github.com/oswida/joplin-markdown-calc" href="https://github.com/oswida/joplin-markdown-calc">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/osw.joplin.markdowncalc/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/osw.joplin.markdowncalc/plugin.jpl">⬇️</a></td>
+<td>Markdown table calculations</td>
+<td>1.0.5</td>
+<td>Plugin for automatic calculations of markdown table formulas.</td>
+<td>Oskar Świda</td>
+</tr>
+<tr>
+<td><a title="https://github.com/hieuthi/joplin-plugin-markdown-table-colorize" href="https://github.com/hieuthi/joplin-plugin-markdown-table-colorize">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.markdown-table-colorize/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.markdown-table-colorize/plugin.jpl">⬇️</a></td>
+<td>Markdown Table: Colorize</td>
+<td>1.1.3</td>
+<td>Add colors to markdown table syntax to help distinguish different columns</td>
+<td>Hieu-Thi Luong</td>
+</tr>
+<tr>
+<td><a title="https://github.com/hieuthi/joplin-plugin-markdown-table-sortable" href="https://github.com/hieuthi/joplin-plugin-markdown-table-sortable">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.markdown-table-sortable/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.markdown-table-sortable/plugin.jpl">⬇️</a></td>
+<td>Markdown Table: Sortable</td>
+<td>1.1.0</td>
+<td>Sort rendered markdown tables on the fly. Can recognize simple cases of number, money, date and sort accordingly.</td>
+<td>Hieu-Thi Luong</td>
+</tr>
+<tr>
+<td><a title="https://github.com/CalebJohn/joplin-math-mode#readme" href="https://github.com/CalebJohn/joplin-math-mode#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/plugin.calebjohn.MathMode/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/plugin.calebjohn.MathMode/plugin.jpl">⬇️</a></td>
+<td>Math Mode</td>
+<td>0.5.3</td>
+<td>Turn your notes into a powerful calculator with inline math.</td>
+<td>Caleb John</td>
+</tr>
+<tr>
+<td><a title="https://github.com/tessus/joplin-plugin-menu-shortcut-toolbar#readme" href="https://github.com/tessus/joplin-plugin-menu-shortcut-toolbar#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/cx.evermeet.tessus.menu-shortcut-toolbar/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/cx.evermeet.tessus.menu-shortcut-toolbar/plugin.jpl">⬇️</a></td>
+<td>Menu items, Shortcuts, Toolbar icons</td>
+<td>1.1.0</td>
+<td>Additional menu items, shortcuts, and toolbar icons, which are not part of Joplin core</td>
+<td>Helmut K. C. Tessarek</td>
+</tr>
+<tr>
+<td><a title="https://github.com/hieuthi/joplin-plugin-metis" href="https://github.com/hieuthi/joplin-plugin-metis">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.metis/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.metis/plugin.jpl">⬇️</a></td>
+<td>Metis</td>
+<td>0.1.4</td>
+<td>A Simple Task Manager Plugin for Joplin based on Todo.txt Specification</td>
+<td>Hieu-Thi Luong</td>
+</tr>
+<tr>
+<td><a title="https://github.com/fengqiaozhu/joplin_plugin_nlr.git" href="https://github.com/fengqiaozhu/joplin_plugin_nlr.git">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.joplin_plugin.nlr/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.joplin_plugin.nlr/plugin.jpl">⬇️</a></td>
+<td>NLR</td>
+<td>1.0.2</td>
+<td>将joplin在记笔记的同时，变成一个网文小说阅读器,a chinese net literature downloader and reader plugin for joplin.</td>
+<td>fengQ</td>
+</tr>
+<tr>
+<td><a title="https://github.com/ylc395/joplin-plugin-note-link-system" href="https://github.com/ylc395/joplin-plugin-note-link-system">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/ylc395.noteLinkSystem/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/ylc395.noteLinkSystem/plugin.jpl">⬇️</a></td>
+<td>Note Link System</td>
+<td>0.5.0</td>
+<td>A complete Link System for Joplin. Referrer(aka. backlink), Quick Link, Copy Anchor, Hover to preview, and much more feature</td>
+<td>ylc395</td>
+</tr>
+<tr>
+<td><a title="https://github.com/laurent22/joplin/tree/dev/packages/plugins/ToggleSidebars" href="https://github.com/laurent22/joplin/tree/dev/packages/plugins/ToggleSidebars">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/org.joplinapp.plugins.ToggleSidebars/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/org.joplinapp.plugins.ToggleSidebars/plugin.jpl">⬇️</a></td>
+<td>Note list and sidebar toggle buttons</td>
+<td>1.0.3</td>
+<td>Adds buttons to toggle note list and sidebar</td>
+<td>Laurent Cozic</td>
+</tr>
+<tr>
+<td><a title="https://github.com/JackGruber/joplin-plugin-note-overview/blob/master/README.md" href="https://github.com/JackGruber/joplin-plugin-note-overview/blob/master/README.md">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.note-overview/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.note-overview/plugin.jpl">⬇️</a></td>
+<td>Note overview</td>
+<td>1.5.4</td>
+<td>A note overview is created based on the defined search and the specified fields.</td>
+<td>JackGruber</td>
+</tr>
+<tr>
+<td><a title="https://github.com/Kaid00/joplin-note-statistics#readme" href="https://github.com/Kaid00/joplin-note-statistics#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/plugin.azamahJunior.note-statistics/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/plugin.azamahJunior.note-statistics/plugin.jpl">⬇️</a></td>
+<td>Note Statistics</td>
+<td>1.0.4</td>
+<td>Plugin to get note statistics</td>
+<td>Azamah Junior</td>
+</tr>
+<tr>
+<td><a title="https://github.com/benji300/joplin-note-tabs" href="https://github.com/benji300/joplin-note-tabs">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.note.tabs/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.note.tabs/plugin.jpl">⬇️</a></td>
+<td>Note Tabs</td>
+<td>1.4.0</td>
+<td>Allows to open several notes at once in tabs and pin them.</td>
+<td>Benji300</td>
+</tr>
+<tr>
+<td><a title="https://github.com/DanteCoder/JoplinPluginNoteVariables#readme" href="https://github.com/DanteCoder/JoplinPluginNoteVariables#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.DanteCoder.NoteVariables/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.DanteCoder.NoteVariables/plugin.jpl">⬇️</a></td>
+<td>Note Variables</td>
+<td>1.0.0</td>
+<td>A plugin to create variables that can be accesed through all the notes.</td>
+<td>Dante G. Barboza</td>
+</tr>
+<tr>
+<td><a title="https://github.com/Mick2nd/Notes-Import-Joplin#readme" href="https://github.com/Mick2nd/Notes-Import-Joplin#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/de.habelt.NotesStationImport/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/de.habelt.NotesStationImport/plugin.jpl">⬇️</a></td>
+<td>Notes Station Import</td>
+<td>1.0.5</td>
+<td>This plugin imports notes from QNAP Notes Station</td>
+<td>Jürgen Habelt</td>
+</tr>
+<tr>
+<td><a title="https://github.com/ylc395/joplin-plugin-ocr" href="https://github.com/ylc395/joplin-plugin-ocr">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/ylc395.joplinOcr/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/ylc395.joplinOcr/plugin.jpl">⬇️</a></td>
+<td>OCR</td>
+<td>0.3.2</td>
+<td>offline OCR auto/manually for images, videos, pdf documents in your Joplin notes</td>
+<td>ylc395</td>
+</tr>
+<tr>
+<td><a title="https://github.com/cqroot/joplin-outline" href="https://github.com/cqroot/joplin-outline">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/outline/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/outline/plugin.jpl">⬇️</a></td>
+<td>Outline</td>
+<td>1.3.1</td>
+<td>Outline (TOC) sidebar plugin for joplin.</td>
+<td>cqroot</td>
+</tr>
+<tr>
+<td><a title="https://github.com/ylc395/joplin-plugin-pages-publisher" href="https://github.com/ylc395/joplin-plugin-pages-publisher">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/ylc395.pagesPublisher/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/ylc395.pagesPublisher/plugin.jpl">⬇️</a></td>
+<td>Pages Publisher</td>
+<td>1.6.2</td>
+<td>Generate static blog website from your picked Joplin notes, and publish to Github Pages, with a few mouse clicks. Support preview in local</td>
+<td>ylc395</td>
+</tr>
+<tr>
+<td>-</td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.coderrsid.pasteSpecial/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.coderrsid.pasteSpecial/plugin.jpl">⬇️</a></td>
+<td>Paste Special</td>
+<td>1.1.2</td>
+<td>A plugin used to paste special text into Joplin</td>
+<td>coderrsid</td>
+</tr>
+<tr>
+<td><a title="https://github.com/benji300/joplin-persistent-layout" href="https://github.com/benji300/joplin-persistent-layout">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.benji.persistentLayout/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.benji.persistentLayout/plugin.jpl">⬇️</a></td>
+<td>Persistent Editor Layout</td>
+<td>2.2.0</td>
+<td>Save the editor layout (editor/split view/viewer/rich text) for each note separately with custom tags.</td>
+<td>Benji300</td>
+</tr>
+<tr>
+<td><a title="https://github.com/marc0l92/joplin-plugin-plantUML#readme" href="https://github.com/marc0l92/joplin-plugin-plantUML#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.github.marc0l92.joplin-plugin-plantUML/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.github.marc0l92.joplin-plugin-plantUML/plugin.jpl">⬇️</a></td>
+<td>PlantUML2</td>
+<td>1.8.0</td>
+<td>Render PlantUML diagram inside your Joplin notes.</td>
+<td>marc0l92</td>
+</tr>
+<tr>
+<td><a title="https://github.com/hieuthi/joplin-plugin-quick-goto" href="https://github.com/hieuthi/joplin-plugin-quick-goto">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.quick-goto/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.quick-goto/plugin.jpl">⬇️</a></td>
+<td>Quick Goto</td>
+<td>1.2.0</td>
+<td>Switch to designated notes using keyboard shortcuts</td>
+<td>Hieu-Thi Luong</td>
+</tr>
+<tr>
+<td><a title="https://github.com/martinkorelic/joplin-plugin-quick-html-tags" href="https://github.com/martinkorelic/joplin-plugin-quick-html-tags">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.quick.html.tags/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.quick.html.tags/plugin.jpl">⬇️</a></td>
+<td>Quick HTML tags</td>
+<td>0.1.1</td>
+<td>Create quick HTML tags.</td>
+<td>Martin Korelič</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/quick-links-plugin/14214" href="https://discourse.joplinapp.org/t/quick-links-plugin/14214">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.whatever.quick-links/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.whatever.quick-links/plugin.jpl">⬇️</a></td>
+<td>Quick Links</td>
+<td>1.2.2</td>
+<td>Create links to other notes</td>
+<td>Roman Musin</td>
+</tr>
+<tr>
+<td><a title="https://github.com/benji300/joplin-quick-move" href="https://github.com/benji300/joplin-quick-move">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.benji.quick-move/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.benji.quick-move/plugin.jpl">⬇️</a></td>
+<td>Quick Move</td>
+<td>1.1.0</td>
+<td>Collection of commands to quickly move notes to other notebooks.</td>
+<td>Benji300</td>
+</tr>
+<tr>
+<td><a title="https://github.com/Kaid00/joplin-random-note/blob/master/README.md" href="https://github.com/Kaid00/joplin-random-note/blob/master/README.md">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.plugin.randomNotePlugin/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.plugin.randomNotePlugin/plugin.jpl">⬇️</a></td>
+<td>Random note</td>
+<td>1.0.3</td>
+<td>Opens a random note from your vault</td>
+<td>Azamah Junior</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/plugin-repeating-to-dos/16470" href="https://discourse.joplinapp.org/t/plugin-repeating-to-dos/16470">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.gitlab.BeatLink.joplin-plugin-repeating-todos/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.gitlab.BeatLink.joplin-plugin-repeating-todos/plugin.jpl">⬇️</a></td>
+<td>Repeating To-Dos</td>
+<td>0.7.0</td>
+<td>A powerful and comprehensive plugin for to-do repetition/recurrence</td>
+<td>BeatLink</td>
+</tr>
+<tr>
+<td><a title="https://github.com/roman-r-m/joplin-plugin-resource-search" href="https://github.com/roman-r-m/joplin-plugin-resource-search">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/net.rmusin.resource-search/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/net.rmusin.resource-search/plugin.jpl">⬇️</a></td>
+<td>Resource Search Plugin</td>
+<td>0.1.1</td>
+<td>Search in Attached Resources</td>
+<td>Roman Musin</td>
+</tr>
+<tr>
+<td><a title="https://github.com/CalebJohn/joplin-rich-markdown#readme" href="https://github.com/CalebJohn/joplin-rich-markdown#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/plugin.calebjohn.rich-markdown/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/plugin.calebjohn.rich-markdown/plugin.jpl">⬇️</a></td>
+<td>Rich Markdown</td>
+<td>0.8.3</td>
+<td>Helping you ditch the markdown viewer for good.</td>
+<td>Caleb John</td>
+</tr>
+<tr>
+<td><a title="https://github.com/hieuthi/joplin-plugin-rubi-and-furigana" href="https://github.com/hieuthi/joplin-plugin-rubi-and-furigana">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.rubi-and-furigana/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.rubi-and-furigana/plugin.jpl">⬇️</a></td>
+<td>Rubi and Furigana</td>
+<td>1.1.0</td>
+<td>Commands that insert appropriate &lt;ruby&gt; and &lt;rt&gt; tags to formatted text to display furigana.</td>
+<td>Hieu-Thi Luong</td>
+</tr>
+<tr>
+<td><a title="https://github.com/marcgreen/semantic-joplin/tree/master/similar-notes" href="https://github.com/marcgreen/semantic-joplin/tree/master/similar-notes">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.github.marcgreen.joplin-plugin-semantically-similar-notes/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.github.marcgreen.joplin-plugin-semantically-similar-notes/plugin.jpl">⬇️</a></td>
+<td>Semantically Similar Notes</td>
+<td>0.2.1</td>
+<td>Show user which notes are semantically similar to the one they are looking at</td>
+<td>marc green</td>
+</tr>
+<tr>
+<td><a title="https://github.com/ambrt/joplin-plugin-send-snippet" href="https://github.com/ambrt/joplin-plugin-send-snippet">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.sendSnippet/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.ambrt.sendSnippet/plugin.jpl">⬇️</a></td>
+<td>Send snippet to different note</td>
+<td>1.0.0</td>
+<td>Sends snippet of text to any other note from any notebook</td>
+<td>ambrt</td>
+</tr>
+<tr>
+<td><a title="https://github.com/JackGruber/joplin-plugin-backup/blob/master/README.md" href="https://github.com/JackGruber/joplin-plugin-backup/blob/master/README.md">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.backup/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.backup/plugin.jpl">⬇️</a></td>
+<td>Simple Backup</td>
+<td>1.0.5</td>
+<td>Plugin to create manual and automatic backups.</td>
+<td>JackGruber</td>
+</tr>
+<tr>
+<td><a title="https://github.com/hieuthi/joplin-plugin-slash-commands" href="https://github.com/hieuthi/joplin-plugin-slash-commands">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.slash-commands/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.hieuthi.joplin.slash-commands/plugin.jpl">⬇️</a></td>
+<td>Slash Commands: Datetime &amp; More</td>
+<td>1.2.1</td>
+<td>Execute several utilities by typing a command that starts with a slash.</td>
+<td>Hieu-Thi Luong</td>
+</tr>
+<tr>
+<td><a title="https://github.com/martinkorelic/joplin-plugin-spoilers" href="https://github.com/martinkorelic/joplin-plugin-spoilers">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.spoiler.cards/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.spoiler.cards/plugin.jpl">⬇️</a></td>
+<td>Spoilers</td>
+<td>1.0.3</td>
+<td>Create inline spoilers and spoiler blocks with title and extendable body.</td>
+<td>Martin Korelič</td>
+</tr>
+<tr>
+<td><a title="https://github.com/roman-r-m/joplin-plugin-table-formatter" href="https://github.com/roman-r-m/joplin-plugin-table-formatter">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/net.rmusin.joplin-table-formatter/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/net.rmusin.joplin-table-formatter/plugin.jpl">⬇️</a></td>
+<td>Table Formatter Plugin</td>
+<td>1.2.1</td>
+<td>Format the table under the cursor in Markdown editor</td>
+<td>Roman Musin</td>
+</tr>
+<tr>
+<td><a title="https://github.com/JackGruber/joplin-plugin-tagging/blob/master/README.md" href="https://github.com/JackGruber/joplin-plugin-tagging/blob/master/README.md">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.copytags/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/io.github.jackgruber.copytags/plugin.jpl">⬇️</a></td>
+<td>Tagging</td>
+<td>1.0.1</td>
+<td>Plugin to extend the Joplin tagging menu with a coppy all tags and a tagging dialog with more control. (Formerly Copy Tags).</td>
+<td>JackGruber</td>
+</tr>
+<tr>
+<td><a title="https://github.com/forcewake/joplin-tags-generator" href="https://github.com/forcewake/joplin-tags-generator">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.forcewake.tags-generator/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.forcewake.tags-generator/plugin.jpl">⬇️</a></td>
+<td>Tags Generator</td>
+<td>1.0.0</td>
+<td>Plugin for Joplin which can be used to extract keywords from note and assign them as a note’s tags</td>
+<td>forcewake</td>
+</tr>
+<tr>
+<td><a title="https://github.com/joplin/plugin-templates" href="https://github.com/joplin/plugin-templates">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.templates/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/joplin.plugin.templates/plugin.jpl">⬇️</a></td>
+<td>Templates</td>
+<td>2.2.0</td>
+<td>This plugin allows you to create and use templates in Joplin.</td>
+<td>Nishant Mittal</td>
+</tr>
+<tr>
+<td><a title="https://github.com/Winbee/joplin-turn-to-chart" href="https://github.com/Winbee/joplin-turn-to-chart">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/net.gagnepain.turnToChart/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/net.gagnepain.turnToChart/plugin.jpl">⬇️</a></td>
+<td>turnToChart</td>
+<td>1.6.0</td>
+<td>Transform markdown table into d3js chart</td>
+<td>Samuel Gagnepain</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/untagged/16680" href="https://discourse.joplinapp.org/t/untagged/16680">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.github.BeatLink.joplin-plugin-untagged/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.github.BeatLink.joplin-plugin-untagged/plugin.jpl">⬇️</a></td>
+<td>Untagged</td>
+<td>2.4.0</td>
+<td>This is a joplin plugin to find notes and todos without a tag.</td>
+<td>BeatLink</td>
+</tr>
+<tr>
+<td><a title="https://github.com/joplin/plugin-victor#readme" href="https://github.com/joplin/plugin-victor#readme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/org.joplinapp.plugins.Victor/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/org.joplinapp.plugins.Victor/plugin.jpl">⬇️</a></td>
+<td>Victor</td>
+<td>1.0.0</td>
+<td>Victor can be used to clear all your data - notes, notebooks, attachments, tags, etc. Convenient to start over.</td>
+<td>Laurent Cozic</td>
+</tr>
+<tr>
+<td><a title="https://discourse.joplinapp.org/t/joplin-white-theme" href="https://discourse.joplinapp.org/t/joplin-white-theme">🏠</a></td>
+<td><a title="https://github.com/joplin/plugins/raw/master/plugins/com.github.BeatLink.joplin-plugin-white-theme/plugin.jpl" href="https://github.com/joplin/plugins/raw/master/plugins/com.github.BeatLink.joplin-plugin-white-theme/plugin.jpl">⬇️</a></td>
+<td>White Theme</td>
+<td>0.0.7</td>
+<td>A white theme for joplin</td>
+<td>BeatLink</td>
+</tr>
+</tbody>
+</table>
+
+            </div>
+
+
+        </article>
+    </div>
+</div>
+
+
+
+
+
+
+
+                </div>
+
+
+                <div class="article_dig">
+
+                    <!--文章页的点赞按钮-->
+                    <a href="javascript:void(0)" class="wenzhang_dig_button" title="点个赞鼓励一下吧！"><i class="fa fa-thumbs-up"></i></a>
+
+                    <!--分享插件的盒子-->
+                    <div id="share"></div>
+
+                    <script>
+                        $('#share').share({
+                            sites: ['wechat', 'weibo', 'qq', 'qzone', 'tencent', 'douban']
+                        });
+                    </script>
+
+                </div>
+
+
+                <div class="wenzhang_box_article_shengming">
+                    <p>文章声明： 非特殊说明，本文版权归 SUN个人博客 所有，转载请注明出处</p>
+                    <p>本文标题： <span class="wenzhang_box_article_shengming_title" title="文章title">Joplin 插件</span></p>
+                    <p>本文地址： <span class="wenzhang_box_article_shengming_link" title="文章链接"></span></p>
+                    <p>点此返回目录： <span class="wenzhang_box_article_shengming_link" title="目录链接"><a href="../">回到顶端<a href="javascript:window.scrollTo(0,0)"  title="回到顶端"></a></a></span></p>
+                </div>
+
+                <!-- <div class="article_prev_next_list clearfix">
+                    <a href="javascript:void(0)" title="上篇文章：标题"><i class="fa fa-arrow-left"></i>上篇文章：无</a>
+                    <a href="javascript:void(0)" title="返回目录"><i class="fa fa-list-ul"></i>返回目录</a>
+                    <a href="javascript:void(0)" title="下篇文章：标题"><i class="fa fa-arrow-right"></i>下篇文章：无</a>
+                </div> -->
+
+                <div class="pinglun_box">
+                    <h3>全部评论</h3>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <!--base随笔页身体右边部分-->
+        <div class="base_content_right">
+
+            <div class="base_content_right_item" id="base_content_right_down">
+                <div class="base_search">
+                    <form name="searchform" class="search_form" method="post" action="#" target="_blank">
+                        <input type="text" class="search_text" required="required" name="keyboard" placeholder="输入关键字搜索">
+                        <input type="hidden" name="tbname" value="news">
+                        <input type="hidden" name="show" value="title,smalltext">
+                        <input type="hidden" name="tempid" value="1">
+                        <input type="hidden" name="classid" value="1,4,9">
+                        <input type="submit" class="search_btn" value="" title="搜索">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </div>
+
+
+
+                <!--这里是页面右侧的导航部分-->
+                <div class="blog_right_nav">
+
+                    <ul>
+                        <blog_active_and_hover_class class="blog_active_and_hover_class"></blog_active_and_hover_class>
+
+                    </ul>
+
+                </div>
+                <!--这里是右侧的博客介绍部分-->
+                <div class="blog_info">
+                    <ul>
+                        <blog_active_and_hover_class class="blog_active_and_hover_class"></blog_active_and_hover_class>
+                        <li class="blog_lanmu_active"><a href="javascript:void(0)">博客介绍</a></li>
+                        <li><a href="javascript:void(0)">创建时间:<time datetime="1642579283000"
+                            >2022-01-19 16:01</time
+                          ></a></li>
+                        <li><a href="javascript:void(0)">创建目的:玩</a></li>
+                        <!-- <li><a href="javascript:void(0)">文章总数:0</a></li>
+                            <li><a href="javascript:void(0)">来访人数:210</a></li> -->
+                    </ul>
+                </div>
+                <!--这里是右侧的博主介绍部分-->
+                <div class="blog_master_info">
+                    <ul>
+                        <blog_active_and_hover_class class="blog_active_and_hover_class"></blog_active_and_hover_class>
+                        <li class="blog_lanmu_active"><a href="javascript:void(0)">博主介绍</a></li>
+                        <li><a href="javascript:void(0)">网名：SUN</a></li>
+                        <li><a href="javascript:void(0)">座右铭：这里放座右铭，写什么还没想好。</a></li>
+                        <li><a href="javascript:void(0)">简介：90后，爱研究，爱读书，爱旅游，期盼有一天有能力环游全世界，看遍世界的美丽。</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="base_content_right_item">
+
+                <h3 class="base_content_right_item_title">点击排行</h3>
+
+
+
+
+            </div>
+
+
+            <div class="base_content_right_item">
+
+                <h3 class="base_content_right_item_title">最新文章</h3>
+                <div class="base_content_right_item_list">
+                    <div class="blogs-list-block">
+                        
+                            <div class="annual-block">
+                                <time class="annual-block-headline">2022</time>
+                                <ol>
+                                    
+                                        <li>
+                                            <time datetime="1645285978937" class="annual-block-date">
+                                2022-02-19 23:52
+                              </time>
+                                            <a class="annual-block-title" href="article/untitled-4">
+                                                笔记列表-站点地图
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <time datetime="1642579371000" class="annual-block-date">
+                                2022-01-19 16:02
+                              </time>
+                                            <a class="annual-block-title" href="article/untitled-5">
+                                                乔普林插件存储库
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <time datetime="1642579283000" class="annual-block-date">
+                                2022-01-19 16:01
+                              </time>
+                                            <a class="annual-block-title" href="article/joplin">
+                                                Joplin 插件
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <time datetime="1641622662000" class="annual-block-date">
+                                2022-01-08 14:17
+                              </time>
+                                            <a class="annual-block-title" href="article/untitled-6">
+                                                微信公众号-推文指南
+                                            </a>
+                                        </li>
+                                        
+                                </ol>
+                            </div>
+                            
+                            <div class="annual-block">
+                                <time class="annual-block-headline">2021</time>
+                                <ol>
+                                    
+                                        <li>
+                                            <time datetime="1637328106000" class="annual-block-date">
+                                2021-11-19 21:21
+                              </time>
+                                            <a class="annual-block-title" href="article/joplin-+-zotero">
+                                                Joplin + zotero 从陌生到熟悉的笔记、文献管理应用
+                                            </a>
+                                        </li>
+                                        
+                                </ol>
+                            </div>
+                            
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+</div>
+            <div class="go_top"><i class="fa fa-angle-up"></i></div>
+            <!--index页面的底部部分-->
+<div class="index_footer">
+    <div class="base_footer">
+        <ul>
+            <li><a href="#" target="_blank" title="QQ:1224430842@qq.com"  class="base_footer_qq"><i class="fa fa-qq"></i></a></li>
+            <li><a href="#" target="_blank" title="邮箱：1224430842@qq.com" class="base_footer_email"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="javascript:void(0)" title="扫描微信二维码你也联系不上我" class="base_footer_weixin"><i class="fa fa-weixin"></i><img src="/_assets/img/erweima.png"></a></li>
+        </ul>
+    
+        <span class="base_footer_text">Copyright © 2022-2099 Power by SUN的博客</span>
+        <span class="base_footer_text">ICP备案号：<a href="http://www.beian.miit.gov.cn/">XXXXXXXXXX</a></span>
+    </div>
+    
+</div>
+
+</body>
+
+</html>
