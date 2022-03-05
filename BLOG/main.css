@@ -544,6 +544,7 @@ template {
     line-height: 1.5;
     word-wrap: break-word;
     display: inline-block;
+    width: 100%;
 }
 
 .markdown-body .pl-c {
